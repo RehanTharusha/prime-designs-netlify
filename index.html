@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@800&display=swap" rel="stylesheet">
+
+    <!-- Fraunces Font -->
+    <!-- font-family: 'Fraunces', serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,600&family=Fraunces:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+
+    <!-- league spartan font -->
+    <!-- font-family: 'Spartan', sans-serif;  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Montserrat font -->
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Playfair font -->
+    <!-- font-family: 'Playfair Display', serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- Work Sans font -->
+    <!-- font-family: 'Work Sans', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap" rel="stylesheet">
+
+
+    <!-- newsletter-icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="mobileStyles.css">
+
+    
+    <title>Prime Design | Now On Sale!</title>
+</head>
+
+<body>
+    
+<header class="desktop-header">
+
+    <img class="logo" src="Images/logo.png" alt="">
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://prime-designs-shop.000webhostapp.com/">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        
+    </ul>
+</header>
+
+    <header class="header">
+        <nav class="navbar">
+            <img class="logo" src="Images/logo.png" alt="">
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://prime-designs-shop.000webhostapp.com/" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link">Sign Up</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
+
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+</script>
+
+<div class="video-container">
+
+    <video src="Images/Banner_Video.mp4" autoplay loop muted></video>
+    
+    <div class="overlay-desc">
+
+        <img src="Images/logo.png" alt="">
+
+
+        <h2>Nature inspired organic clothing.</h2>
+
+        <div class="videoButton">
+            <a href="#buttonScroll">Shop Collection</a>
+        </div>
+
+
+  
+     </div>
+</div>
+
+<div class="mainHeader" id="buttonScroll">
+    <h1>Featured Products</h1>
+</div>
+
+
+
+
+<!-- This is the catalogue -->
+<div class="catalogue"> 
+
+    <div class="row">
+        <!----------------------------------------------------------------------------->
+            <div class="card">
+                <a href="">
+                    <img src="Images/Product Images/boots_image.png" alt="" style="width:100%">
+                </a>
+
+                <h1 class="captionHeading">Outdoor Boots</h1>
+                
+                <p class="caption">Designed for every day adventures in the wild and the city.</p>
+
+                <div class="banner_button">
+                    <a href="https://prime-designs-shop.000webhostapp.com/">Shop Now</a>
+                </div>
+            </div>
+        <!----------------------------------------------------------------------------->
+            <div class="card">
+                <a href="">
+                    <img src="Images/Product Images/tshirt_image.png" alt="" style="width:100%">
+                </a>
+
+                <h1 class="captionHeading">Graphic T-Shirts</h1>
+                
+                <p class="caption">We use creative techniques to make our original adventure-inspired graphics for our organic tees.</p>
+                
+                <div class="banner_button">
+                    <a href="https://prime-designs-shop.000webhostapp.com/">Shop Now</a>
+                </div>
+            </div>
+        <!----------------------------------------------------------------------------->
+            <div class="card">
+                <a href="">
+                    <img src="Images/Product Images/head-for-the-hills-organic-cotton-sweater-navy-The-Level-Collective_590x.jpg" alt="" style="width:100%">
+                </a>
+
+                <h1 class="captionHeading">Sweaters</h1>
+                
+                <p class="caption">Our sweaters are all hand screen printed using water based inks onto ethically made organic unisex fit sweaters.</p>
+                
+                <div class="banner_button">
+                    <a href="https://prime-designs-shop.000webhostapp.com/">Shop Now</a>
+                </div>
+            </div>
+    </div>
+
+    <div class="row">
+        <!----------------------------------------------------------------------------->
+            <div class="card">
+                <a href="">
+                    <img src="Images/Product Images/Trail-merino-wool-socks-forest-flat-lay-The-Level-Collective_1_590x.jpg" alt="" style="width:100%">
+                </a>
+
+                <h1 class="captionHeading">Cotton Socks</h1>
+                
+                <p class="caption">Wool socks perfect for everyday trails in the wild and city – lightweight, organic, breathable and durable.</p>
+                
+                <div class="banner_button">
+                    <a href="https://prime-designs-shop.000webhostapp.com/">Shop Now</a>
+                </div>
+            </div>
+        <!----------------------------------------------------------------------------->
+            <div class="card">
+                <a href="">
+                    <img src="Images/Product Images/backpack_image_Edit.png" alt="" style="width:100%">
+                </a>
+
+                <h1 class="captionHeading">Backpacks</h1>
+                
+                <p class="caption">We’ve combined form and function to create an everyday backpack for the commute and wildness pursuit.</p>
+                
+                <div class="banner_button">
+                    <a href="https://prime-designs-shop.000webhostapp.com/">Shop Now</a>
+                </div>
+            </div>
+        <!----------------------------------------------------------------------------->
+            <div class="card">
+                <a href="">
+                    <img src="Images/Product Images/Palm-navy-organic-t-shirt-rust-and-water-folded_1000x_089b46c3-80a6-42f6-be61-8ef60a594dc5_590x.jpg" alt="" style="width:100%">
+                </a>
+
+                <h1 class="captionHeading">T-Shirts</h1>
+                
+                <p class="caption">We collaborate with artists to create our adventure inspired unisex sustainable T-shirts.</p>
+                
+                <div class="banner_button">
+                    <a href="https://prime-designs-shop.000webhostapp.com/">Shop Now</a>
+                </div>
+            </div>
+        <!----------------------------------------------------------------------------->
+</div>
+
+        
+    <div class="textBanner1">
+        <a href="https://prime-designs-shop.000webhostapp.com/">Explore our catalogue.
+        <div class="arrow"> &#8594;</div>
+        </a>
+    </div>
+
+</div>
+
+
+
+<!-- /* --------------------------------------- promo sections --------------------------------------- */ -->
+
+<div class="promo-container">
+
+    <div class="text-section">
+
+        <p class="promo-paragraph-one">Brand New</p>
+        
+        <h2>Summer Collection</h2>
+
+        <p class="promo-paragraph-two">
+            Check out our comfy crewnecks, lightweight khakis, breathable tanktops and more.
+        </p>
+
+        <div class="promoButton">
+            <a href="about.php">Shop Women's</a>
+        </div>
+
+        <div class="promoButton">
+            <a href="about.php">Shop All</a>
+        </div>
+
+
+    </div>
+
+    <div class="image-section">
+        <img src="Images/womens_jeans.jpg" style="margin-bottom: 8vh;" alt="preview_image ">
+        <img src="Images/promo banner image.jpg" alt="preview_image ">
+        <img src="Images/banner_image_another.jpg" style="margin-bottom: 1vh;" alt="preview_image ">
+    </div>
+
+</div>
+
+
+
+<div class="promo-container">
+    
+    <div class="giftcard-image-section">
+        <img src="Images/store2_360x.jpg" id="image-1" alt="">
+        <img src="Images/shop_image.jpg" id="image-2" alt="">
+    </div>
+
+    <div class="text-section">
+
+        <p class="promo-paragraph-one">GiftCards</p>
+        
+        <h2>Support your <br> neighborhood</h2>
+
+        <p class="promo-paragraph-two">
+            We believe that local businesses are an integral part of a neighborhood's character. Help keep us local by buying a gift card!
+        </p>
+
+        <div class="promoButton">
+            <a href="about.php">Buy Giftcards</a>
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+
+<div class="mobile-promo-container">
+
+        <img src="Images/promo banner image.jpg" alt="">
+
+
+        <div class="text-section">
+
+            <p class="promo-paragraph-one">Brand New</p>
+            
+            <h2>Summer Collection</h2>
+
+            <p class="promo-paragraph-two">
+                Check out our comfy crewnecks, lightweight khakis, breathable tanktops and more.
+            </p>
+
+            <div class="promoButton">
+                <a href="about.php">Shop Women's</a>
+            </div>
+
+            <div class="promoButton">
+                <a href="about.php">Shop All</a>
+            </div>
+        </div>
+</div>
+
+
+<div class="mobile-promo-container">
+        
+        <img src="Images/store2_360x.jpg" id="image-1" alt="">
+
+    <div class="text-section">
+
+        <p class="promo-paragraph-one">GiftCards</p>
+        
+        <h2>Support your <br> neighborhood</h2>
+
+        <p class="promo-paragraph-two">
+            We believe that local businesses are an integral part of a neighborhood's character. Help keep us local by buying a gift card!
+        </p>
+
+        <div class="promoButton">
+            <a href="about.php">Buy Giftcards</a>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- /* --------------------------------------- end of promo containers ---------------------------------------*/ -->
+
+
+
+<div class="container">
+
+    <div class="section1">
+    <h2>We are <br> <span style="color: #84A975">Sustainable.</span></h2>
+
+    <p>Our products are made from certified organic cotton that doesn’t harm our environment. <br> 
+        We use eco-friendly packaging – reducing the single-use plastic that has such an impact on our planet.
+    </p>
+
+    <div class="aboutButton">
+        <a href="about.php">Learn more</a>
+    </div>
+
+    </div>
+
+    <div class="section2">
+        <img src="Images/mike-kotsch-iMk4eZog4FQ-unsplash.jpg" alt="preview_image ">
+    </div>
+
+</div>
+
+<div class="textBanner2">
+    <h1>YOU PLANT A TREE WITH EVERY ITEM PURCHASED.</h1>
+
+    <video src="Images/leaf_gif.mp4"  muted loop autoplay></video>
+
+    <div class="bannerButton">
+        <a href="https://prime-designs-shop.000webhostapp.com/">Shop Now</a>
+    </div>
+</div>
+
+
+
+
+<!-- this is the testimonials section -->
+<div class="testimonials">
+    
+    <h1>Dont take our word for it.</h1>
+
+    <div class="flexContainer">
+
+      <div class="comment">
+      
+        <img src="Images/image-emily.jpg" alt="">
+      
+        <p>
+            "Thank you for the good sales support and being part of the effort to make the world more humane & sustainable"
+        </p>
+      
+        <h1>Emily R.</h1>
+
+        <h3>Marketing Director</h3>
+      </div>
+
+
+      <div class="comment">
+      
+        <img src="Images/image-thomas.jpg" alt="">
+      
+        <p>
+         "DesignCo.’s enthusiasm coupled with their keen interest in their brand has made it a successful, satisfying and enjoyable experience."
+        </p>
+      
+        <h1>Thomas S.</h1>
+
+        <h3>Chief Operating Officer</h3>
+      </div>
+
+
+      <div class="comment">
+      
+        <img src="Images/image-jennie.jpg" alt="">
+      
+        <p>
+            "I was recently at your store, what a delight to find you!"
+        </p>
+      
+        <h1>Jennie F.</h1>
+
+        <h3>Business Owner</h3>
+      </div>
+
+    </div>
+
+</div>
+
+
+<div class="newsletter">
+    <div class="box">
+        <h2>Sign up to save!</h2>
+        <p>Join our newsletter to stay in the loop with all the latest happenings and special offers.</p>
+        <div class="form-control">
+            <input type="text" class="email-input" placeholder="Enter e-mail address" />
+            <button class="btn">Subscribe</button>
+        </div>
+        <p class="thing">We’ll never share your data ‘cos that’s bad.</p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+        
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    document.onscroll = function() {
+        if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+            document.getElementById('header-vanish').style.display='none';
+        }
+    }
+
+</script>
+
+<footer> <!--this is the footer -->
+
+    <div class="section-container">
+    
+        <div class="logo-section">
+            <img src="Images/logo.png" alt="">
+            <p>
+                We aim to Live Level – to pursue a balanced life. Where hard graft meets restful connection.  Where urban meets wilderness.    
+            </p>
+        </div>
+    
+        <div class="section">
+            <h2>Menu</h2>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="https://prime-designs-shop.000webhostapp.com/">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="login.html">Log In</a>
+                    <a href="signup.html">Sign Up</a>
+                </div>
+        </div>
+    
+        <div class="socials">
+            <h2>Get To Know Us!</h2>
+            <div class="socials-container">
+                <a href=""><img src="Images/instagram.png" alt=""></a><br>
+                <a href=""><img src="Images/twitter.png" alt=""></a><br>
+                <a href=""><img src="Images/facebook.png" alt=""></a><br>
+            </div>
+        </div>
+    
+    
+        <div class="section">
+            <h2>Contact Us</h2>
+            <a href="">Contact</a> <br>
+            <a href="">Email</a>
+        </div>
+    
+    </div>
+    
+        <div class="newsletter-section">    
+            <div class="footer-box">
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Join our newsletter to stay in the loop with all the latest happenings and special offers.</p>
+                <div class="form-control">
+                    <input type="text" class="email-input" placeholder="Enter e-mail address" />
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    </body>
+    </html>

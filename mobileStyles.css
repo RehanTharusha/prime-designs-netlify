@@ -1,0 +1,178 @@
+
+@media (max-width: 1024px){
+
+.desktop-header{
+    display: none;
+}
+
+
+
+    .video-container{
+        margin-top: 6vh;
+    }
+
+    .overlay-desc{
+        display: none;
+    }
+
+    .mainHeader{
+        font-size: 12px;
+        padding:2vh;
+        margin: 0;
+    }
+
+
+
+
+
+
+/* this whole part is the catalogue section. */
+    .row{
+        /* flex-direction: column; */
+        margin-bottom: 2vh;
+    }
+
+    .card{
+        margin-bottom: 3vh;
+        max-width: 14vh;
+    }   
+
+
+    .card img{
+        width: 10vh;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;   
+    }
+
+    .captionHeading{
+        display: none;
+    }
+
+    .caption{
+        display: none;
+        width: 35vh;
+        padding-bottom: 2vh;
+    }
+
+    .card .banner_button{
+        display: none;
+    }
+
+    
+    .textBanner1{
+        margin-bottom: 0;
+    }
+
+    .textBanner1 a{
+        font-size: 10px;
+        background: #314B40;
+        padding: 15px 30px;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.5s;
+    } 
+
+    
+/* ---------------------------------- */
+   
+
+/* -----------------promo section------------------------ */
+.promo-container{
+    display: none;
+}
+
+.mobile-promo-container{
+    display: block;
+    margin-top: 0;
+}
+
+.mobile-promo-container img{
+    width: 100%;
+
+}
+
+
+/* ------------------end of promo-section---------------------------- */
+
+
+
+    .container{
+        max-width: 600px;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 10vh 4vh;
+    }
+ 
+    .section1{
+        padding-bottom: 10vh;
+    }
+    
+    .section1 h2{
+        font-size: 1.5em;
+    } 
+
+    .section2 img{
+        width: 100%;
+        height: 100%;
+
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+        border-top-right-radius:8px;
+        border-top-left-radius: 8px;
+    }   
+
+
+     
+/* this is the testimonails flex container */
+
+     .testimonials{
+            margin-top: 10vh;
+     }
+
+     .flexContainer{
+        flex-direction: column;
+     }
+
+     .testimonials{
+
+     };
+/* -------------------------------------- */
+
+
+
+/* this is the newsletter part in the body.  */
+    .box{
+         margin-left: 8vh;
+         margin-right: 8vh;
+     }
+
+/* this is the newsletter part in the footer. */
+    .newsletter-section{
+        display: none;
+    }
+
+/* foooooooooooooootttttttttteeeeeeeeeeerrrrrrrrrrrr */
+/* foooooooooooooootttttttttteeeeeeeeeeerrrrrrrrrrrr */
+
+
+
+.section-container{
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+
+footer .logo-section p{
+    max-width: 30vh;
+    margin-left: 5vh;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+
+}
